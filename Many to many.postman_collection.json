@@ -1,0 +1,27 @@
+{
+	"info": {
+		"_postman_id": "85732285-edc1-40b6-a7c7-a6677493d1e5",
+		"name": "Many to many",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9008/api/users/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"balaji\",\r\n    \"email\": \"balaji@abc.com\",\r\n    \"phone\": \"1234567890\",\r\n    \"roles\": [\r\n        {\r\n            \"name\": \"Balaji\",\r\n            \"post\":\"developer\",\r\n            \"isActive\":\"Yes\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9008/api/users/2"
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "44224d49-e725-47e9-82da-2d74a29011df",
+		"name": "one to many",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/library",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"age\": 25,\r\n  \"email\": \"johndoe@example.com\",\r\n  \"address\": \"123 Main St\",\r\n  \"departmentStaffs\": [\r\n    {\r\n      \"name\": \"Staff 1\",\r\n      \"role\": \"Teacher\",\r\n      \"department\": \"Math\",\r\n      \"salary\": 50000.0\r\n    },\r\n    {\r\n      \"name\": \"Staff 2\",\r\n      \"role\": \"Assistant\",\r\n      \"department\": \"Science\",\r\n      \"salary\": 40000.0\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/library"
+			},
+			"response": []
+		}
+	]
+}

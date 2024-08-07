@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "65a1e883-ebee-4ffc-97d0-8d9c2927d12d",
+		"name": "MAPPING 1 to 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8088/api/addresses",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"sharvari\",\r\n    \"department\": \"Computer Science\",\r\n    \"position\": \"Professor\",\r\n    \"email\": \"abc@university.com\",\r\n    \"phone\": \"123-456-7890\",\r\n    \"libraryStaff\": {\r\n        \"name\": \"shatanu\",\r\n        \"email\": \"abc@library.com\",\r\n        \"phone\": \"098-765-4321\",\r\n        \"role\": \"Librarian\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9009/api/collegeDeptStaff/collegeDepStaff"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:6000/page?page=2&size=2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6000/page?page=2&size=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"page"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "size",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:6000/emp",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9009/api/employees"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/employees/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Balaji dhakne\",\r\n    \"email\": \"abc@.com\",\r\n    \"address\": {\r\n        \"street\": \"54\",\r\n        \"city\": \"Yestar\",\r\n        \"state\": \"MH\",\r\n        \"zip\": \"413515\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/employees/add"
+			},
+			"response": []
+		}
+	]
+}

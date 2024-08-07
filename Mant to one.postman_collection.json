@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "37fcc762-3c73-4fe6-b2f1-8a17974c98a8",
+		"name": "Mant to one",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/"
+			},
+			"response": []
+		}
+	]
+}
