@@ -1,0 +1,20 @@
+{
+  "name": "John Doe",
+  "age": 25,
+  "email": "johndoe@example.com",
+  "address": "123 Main St",
+  "departmentStaffs": [
+    {
+      "name": "Staff 1",
+      "role": "Teacher",
+      "department": "Math",
+      "salary": 50000.0
+    },
+    {
+      "name": "Staff 2",
+      "role": "Assistant",
+      "department": "Science",
+      "salary": 40000.0
+    }
+  ]
+}

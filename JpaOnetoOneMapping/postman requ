@@ -1,0 +1,15 @@
+#Request =http://localhost:9009/api/collegeDeptStaff/collegeDepStaff
+
+{
+    "name": "John Doe",
+    "department": "Computer Science",
+    "position": "Professor",
+    "email": "johndoe@university.com",
+    "phone": "123-456-7890",
+    "libraryStaff": {
+        "name": "Jane Smith",
+        "email": "janesmith@library.com",
+        "phone": "098-765-4321",
+        "role": "Librarian"
+    }
+}
